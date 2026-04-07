@@ -1,6 +1,6 @@
 import { computed, signal } from "@angular/core";
 
-class expenseService {
+export class expenseService {
     //expenses stored as a signal of Expense type
     expenses = signal<expense[]>([]);
 
