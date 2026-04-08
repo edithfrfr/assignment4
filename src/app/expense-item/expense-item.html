@@ -1,1 +1,22 @@
 <p>expense-item works!</p>
+<div
+  class="expense-item"
+  [class.high]="isHighAmount()"
+  [class.work]="expense.category === 'Work'"
+  [class.personal]="expense.category === 'Personal'"
+  [class.grocery]="expense.category === 'Grocery'"
+  [class.shopping]="expense.category === 'Shopping'"
+  [class.travel]="expense.category === 'Travel'"
+  [class.food]="expense.category === 'Food'"
+>
+  <div class="info">
+    <h3>{{ expense.title }}</h3>
+    <p>${{ expense.amount }}</p>
+    <p>Category: {{ expense.category }}</p>
+  </div>
+
+  <div class="actions">
+    <button (click)="editExpense()">Edit</button>
+    <button (click)="deleteExpense()">Delete</button>
+  </div>
+</div>

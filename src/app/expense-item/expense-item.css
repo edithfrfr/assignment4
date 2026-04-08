@@ -1,0 +1,25 @@
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* highlight high expenses */
+.high{
+    background-color: #ffcccc;
+    border-left: 5px red solid;
+}
+
+/* category colors */
+.work { border-left: 4px solid #007bff;}
+.personal { border-left: 4px solid #28a745;}
+.grocery { border-left: 4px solid #ffc107;}
+.utilities { border-left: 4px solid #17a2b8;}
+.shopping { border-left: 4px solid #6f42c1;}
+.travel { border-left: 4px solid #fd7e14;}
+.food { border-left: 4px solid #c0392b;} 
+

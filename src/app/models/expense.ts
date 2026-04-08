@@ -4,4 +4,4 @@ interface expense {
     amount: number;
     category: expenseCategory;
 }
-type expenseCategory = 'Work' | 'Personl' | 'Grocery' | 'Shopping' | 'Travel' | 'Food';
+type expenseCategory = 'Work' | 'Personal' | 'Grocery' | 'Shopping' | 'Travel' | 'Food';
