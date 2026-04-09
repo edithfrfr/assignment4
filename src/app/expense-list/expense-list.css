@@ -1,0 +1,8 @@
+.expense-list {
+    padding: 16px;
+}
+
+app-expense-item {
+    display: block;
+    margin-bottom: 12px;
+}

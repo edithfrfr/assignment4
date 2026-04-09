@@ -6,6 +6,7 @@ import { expenseService } from '../services/expense-service';
   imports: [],
   templateUrl: './expense-item.html',
   styleUrl: './expense-item.css',
+  standalone: true
 })
 export class ExpenseItemComponent {
 
