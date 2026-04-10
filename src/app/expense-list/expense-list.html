@@ -1,10 +1,10 @@
 <p>expense-list works!</p>
 <div class="expense-list">
-<h2>All Expenses</h2>
-<div *ngIf="expenses().length === 0">
+  <h2>All Expenses</h2>
+  <div *ngIf="expenses().length === 0">
     <p>No expenses yet</p>
-</div>
-@for (exp of expenses(); track exp.id) {
+  </div>
+  @for (exp of expenses(); track exp.id) {
     <app-expense-item [expense]="exp"></app-expense-item>
-}
+  }
 </div>
