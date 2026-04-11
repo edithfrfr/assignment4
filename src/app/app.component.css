@@ -1,0 +1,48 @@
+/* NAVBAR BACKGROUND */
+.custom-navbar {
+    background-color: #1e1e2f;
+    /* deep navy */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* BRAND TEXT */
+.navbar-brand {
+    color: white !important;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* BUTTON CONTAINER */
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+/* BUTTON STYLE LINKS */
+.nav-btn {
+    background-color: white;
+    color: #3b4bff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.nav-btn:hover {
+    border-color: #3b4bff;
+    background-color: #eef0ff;
+}
+
+/* ACTIVE ROUTE */
+.nav-btn.active {
+    border-color: #3b4bff;
+    background-color: #dfe3ff;
+    color: #2a36cc;
+}

@@ -1,5 +1,33 @@
-<h1 style="color:red">DASHBOARD WORKS</h1>
-<p>Total: {{ total() }}</p>
-<p>Highest: {{ highest() }}</p>
-<p>Average: {{ average() }}</p>
-<p>Count: {{ count() }}</p>
+<div class="container mt-4">
+  <h2 class="mb-4 fw-bold">Dashboard</h2>
+
+  <div class="row g-4">
+    <div class="col-md-3">
+      <div class="stat-box">
+        <h4>Total</h4>
+        <p>{{ total() }}</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="stat-box">
+        <h4>Highest</h4>
+        <p>{{ highest() }}</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="stat-box">
+        <h4>Average</h4>
+        <p>{{ average() }}</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="stat-box">
+        <h4>Count</h4>
+        <p>{{ count() }}</p>
+      </div>
+    </div>
+  </div>
+</div>
