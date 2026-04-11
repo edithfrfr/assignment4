@@ -1,5 +1,6 @@
 import { Component, inject, Input, input } from '@angular/core';
 import { expenseService } from '../services/expense-service';
+import { expense } from '../models/expense';
 
 @Component({
   selector: 'app-expense-item',

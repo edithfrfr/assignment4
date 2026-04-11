@@ -2,10 +2,12 @@ import { Component, inject, model } from '@angular/core';
 import { expenseService } from '../services/expense-service';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { expenseCategory } from '../models/expense'
 
 @Component({
   selector: 'app-add-expense',
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule ],
   templateUrl: './add-expense.component.html',
   styleUrl: './add-expense.css',
   standalone: true,
