@@ -1,11 +1,20 @@
-<h1 style="color: green">EXPENSE LIST WORKS</h1>
+<div class="list-container">
+  <h2 class="page-title">All Expenses</h2>
 
-<div class="expense-list">
-  <h2>All Expenses</h2>
-  <div *ngIf="expenses().length === 0">
-    <p>No expenses yet</p>
+  <div class="expense-list">
+    @for (e of expenses(); track e.id) {
+      <div class="expense-card">
+        <div class="expense-info">
+          <h3 class="expense-title">{{ e.title }}</h3>
+          <p class="expense-amount">${{ e.amount }}</p>
+          <p class="expense-category">Category: {{ e.category }}</p>
+        </div>
+
+        <div class="expense-actions">
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn" (click)="deleteExpense(e.id)">Delete</button>
+        </div>
+      </div>
+    }
   </div>
-  @for (exp of expenses(); track exp.id) {
-    <app-expense-item [expense]="exp"></app-expense-item>
-  }
 </div>
