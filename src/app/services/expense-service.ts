@@ -1,4 +1,7 @@
-import { computed, signal } from "@angular/core";
+import { computed, signal, Injectable } from "@angular/core";
+@Injectable({
+    providedIn: 'root'
+})
 
 export class expenseService {
     //expenses stored as a signal of Expense type

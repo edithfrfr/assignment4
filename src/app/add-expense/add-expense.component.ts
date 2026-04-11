@@ -6,8 +6,9 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-add-expense',
   imports: [FormsModule],
-  templateUrl: './add-expense.html',
+  templateUrl: './add-expense.component.html',
   styleUrl: './add-expense.css',
+  standalone: true,
 })
 export class AddExpenseComponent {
   private service = inject(expenseService);

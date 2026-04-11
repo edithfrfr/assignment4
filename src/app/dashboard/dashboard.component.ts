@@ -4,8 +4,9 @@ import { expenseService } from '../services/expense-service';
 @Component({
   selector: 'app-dashboard',
   imports: [],
-  templateUrl: './dashboard.html',
-  styleUrl: './dashboard.css',
+  templateUrl: './dashboard.component.html',
+  styleUrl: './dashboard.component.css',
+  standalone: true,
 })
 export class DashboardComponent {
 private expenseService = inject(expenseService);

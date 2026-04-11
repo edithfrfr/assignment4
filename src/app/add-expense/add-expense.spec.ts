@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddExpenseComponent } from './add-expenseComponent';
+import { AddExpenseComponent } from './add-expense.component';
 
 describe('AddExpense', () => {
   let component: AddExpenseComponent;
